@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+}
+
+/*************************************************************/
+/****************************************************/
+/*****************************************/
+/*NAVEGACION*/
+header{
+    /*background-color: rgb(243, 166, 239);*/
+    width: 100%; /*ancho*/
+    height: 50px; /*alto*/
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end; /*justificamos hacia la derecha*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /*Eliminamos puntitos de la lista*/
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none; /*Quitamos las líneas de abajo de los a*/
+    cursor: pointer; /*Cambiamos el tipo del cursor*/
+}
+
+nav .nav-right-section a{
+    margin-right: 25px; 
+    color: #202124
+}
+/*Icono de Menu*/
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+/*Imagen estilo*/
+nav .nav-right-section img{
+    border-radius: 100px; /*Redondeamos la imagen*/
+    margin-left: 25px;
+    width: 35px;
+    height: 35px;
+}
+
+/*************************************************************/
+/****************************************************/
+/*****************************************/
+/*MAIN*/
+
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 272px;
+    height: 92px;
+}
+
+/*Sección Input*/
+main .main-input{
+    width: 530px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid rgba(179, 179, 179, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 443px;
+    height: 39px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0.5px 0.5px 0.5px 1px rgb(196, 196, 196);
+    border-color: #dfe1e500;
+}
+
+/*Vamos a agregar los icons*/
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    background-repeat: no-repeat; /*Evita que se repita el icono por alguna razon*/
+    height: 17px;
+    padding-left: 6%;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    padding-right: 7%;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+    height: 36px;
+    /*Fondo de botones*/
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de letras antes de hover*/
+    color: #3c4043;
+    /*Redondeamos botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+    
+}
+
+/*Efecto hover (como el input)*/
+main .main-buttons button:hover{
+    box-shadow:0 1px 1px rgba(0,0,0,.1);
+    /* background-color:#f8f9fa; */
+    /* Cambia borde al hacer hover */
+    border:1px solid #dadce0;
+    /* Cambia color letras (muy leve) al hacer hover */
+    color:#202124;
+    cursor:pointer;
+}
+
+/*************************************************************/
+/****************************************************/
+/*****************************************/
+/*FOOTER*/
+
+/*footer*/
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #dadce0;
+    /* Footer dividido en dos columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0%; /*Es lo posiciona hasta abajo de la página*/
+}
+
+/*footer listas*/
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0%;
+}
+
+/* footer left  */
+footer .footer-left{
+    justify-self: left;
+
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
